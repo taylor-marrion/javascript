@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Marrion Lab 9 - Schedule</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="jquery-ui.min.css">
+</head>
+<body>
+    <h1>Taylor Marrion Spring 2022</h1>
+    // note to self: https://jqueryui.com/accordion/
+    <div id="accordion">
+        <h3>CSC 321 - Information Security Management</h3>
+        <div>
+            <p>Students will learn the fundamental concepts in managing information protection in an organization.  The course will review information security programs, security policies and procedures, as well as investigate disaster recovery, security awareness and I.T. auditing concepts.  In addition, students will understand and interpret current regulatory bodies that influence businesses from an IT security standpoint.  This is a writing-intensive course which will provide students multiple opportunities to document information security decisions for an organization to operationalize.</p>
+            <p>Prerequisite(s): Completed 30 credit hours.</p>
+        </div>
+        <h3>CSC 364 - Virtualization</h3>
+        <div>
+            <p>A study of the virtualization of computer systems at home and in an enterprise through a hands-on exploration of common hypervisors and containerization implementations including interaction with cloud-based resources.</p>
+        </div>
+        <h3>CSC 404 - Foundation of Computation</h3>
+        <div>
+            <p>An overview algorithms and approaches to solving cyber operations problems, which include essential underlying concepts drawn from discrete mathematics, algorithms analysis, and finite automaton.  Topics may include, but not limited to, searching and sorting algorithms, complexity theory, regular expressions, computability, mathematical foundations of cryptography, and entropy.</p>
+            <p>Prerequisite(s): CSC 300 and MATH 201 </p>
+        </div>
+        <h3>CSC 456 - Operating Systems</h3>
+        <div>
+            <p>A study of the functions and structures associated with operating systems with respect to process management, memory management, auxiliary storage management, and processor management. Topics include concurrent and distributed computing, deadlock, real and virtual memory, job and processor scheduling, security and protection.</p>
+            <p>Prerequisite(s): CSC 300 and CSC 314</p>
+        </div>
+    </div>
+<script src="jquery-3.5.1.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script>
+    $(document).ready( () => {
+        $("#accordion").accordion({
+            heightStyle: "content",
+            collapsible: true
+        });
+    });
+</script>
+</body>
+</html>
