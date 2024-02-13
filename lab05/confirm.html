@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marrion - Lab 5: page4</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#nav_menu").slicknav({ prependTo: "#mobile_menu"});
+        });
+    </script>
+</head>
+<body>
+<header>
+    <img src="images/icon-suv.png" alt="suv_art">
+    <h1>Taylor's new car purchasing research</h1>
+    <h2>Let's scope out some new compact SUVs!</h2>
+</header>
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="top_picks.html">Top Picks</a></li>
+        <li><a href="details.html">Details</a></li>
+        <li><a href="contact.html" class="lastitem">Contact</a></li>
+    </ul>
+</nav>
+<main>
+    <section>
+        <h2>Thanks for your your email</h2>
+        <p>While you wait for our response, please look around the site!</p>
+    </section>
+    <aside>
+        <nav id="nav_list">
+            <ul class="none">
+                <li><a href="https://www.iihs.org/ratings/class-summary/small-suvs">IIHS Small SUVs Safety Ratings</a></li>
+                <li><a href="https://repairpal.com/reliability/compact-suv">Repair Pal Compact SUV Reliability Ratings</a></li>
+                <li><a href="https://www.jdpower.com/Cars/Ratings/dependability/2021/compact-suv">J.D. Power Dependability
+                Compact SUV awards</a></li>
+                <li><a href="https://www.motorbiscuit.com/the-most-reliable-2021-compact-suvs-according-to-consumer-reports/">Consumer Reports Most
+                Reliable 2021 Compact SUVs</a></li>
+            </ul>
+        </nav>
+    </aside>
+</main>
+<footer>
+    <p>&copy; 2021, Taylor Marrion</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marrion - Lab 4: Top Picks</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#nav_menu").slicknav({ prependTo: "#mobile_menu"});
+        });
+    </script>
+</head>
+<body>
+<header>
+    <img src="images/icon-suv.png" alt="suv_art">
+    <h1>Taylor's new car purchasing research</h1>
+    <h2>Let's scope out some new compact SUVs!</h2>
+</header>
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="top_picks.html" class="current">Top Picks</a></li>
+        <li><a href="page3.html">page3</a></li>
+        <li><a href="page4.html" class="lastitem">page4</a></li>
+    </ul>
+</nav>
+<main>
+    <section id="car_profile">
+        <h2>Our top picks</h2>
+        <h4>These are brief profiles of our top picks.</h4>
+        <h3>Mazda CX-5</h3>
+        <figure>
+            <picture>
+                <img src="images/cx5.jpg" alt="cx-5">
+            </picture>
+            <figcaption>2021 Mazda CX-5</figcaption>
+        </figure>
+        <p>The Mazda CX-5 offers... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+
+        <h3>Suburu Forrester</h3>
+        <figure>
+            <picture>
+                <img src="images/forrester.jpg" alt="forrester">
+            </picture>
+            <figcaption>2021 Suburu Forrester</figcaption>
+        </figure>
+        <p>The Suburu Forrester offers... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+
+    </section>
+    <aside>
+        <nav id="nav_list">
+            <ul class="none">
+                <li><a href="https://www.iihs.org/ratings/class-summary/small-suvs">IIHS Small SUVs Safety Ratings</a></li>
+                <li><a href="https://repairpal.com/reliability/compact-suv">Repair Pal Compact SUV Reliability Ratings</a></li>
+                <li><a href="https://www.jdpower.com/Cars/Ratings/dependability/2021/compact-suv">J.D. Power Dependability
+                Compact SUV awards</a></li>
+                <li><a href="https://www.motorbiscuit.com/the-most-reliable-2021-compact-suvs-according-to-consumer-reports/">Consumer Reports Most
+                Reliable 2021 Compact SUVs</a></li>
+            </ul>
+        </nav>
+    </aside>
+</main>
+<footer>
+    <p>&copy; 2021, Taylor Marrion</p>
+</footer>
+</body>
+</html>

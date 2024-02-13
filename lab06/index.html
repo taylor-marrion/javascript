@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Marrion - Lab 6</title>
+</head>
+<body>
+    <h1>Convert Farenheit to Celsius</h1>
+    <script>
+        //
+        let farenheit = 0;
+        let celsius;
+        do {
+            farenheit = prompt('Enter Farenheit temperature:');
+            if (isNaN(farenheit) || farenheit < -100 || farenheit > 212 || farenheit == '') {
+                // display alert
+                alert(`You entered: ${farenheit}\nPlease enter a temperature between -100 and 212.`);
+            } else {
+                celsius = ((parseFloat(farenheit) - 32) * 5 / 9);
+            }
+        } while (isNaN(farenheit) || farenheit < -100 || farenheit > 212 || farenheit == '');
+        document.write(`<p>Temperature in Farenheit: ${farenheit} degrees</p>`);
+        document.write(`<p>Converted to Celsius: ${celsius.toFixed(1)} degrees</p>`);
+    </script>
+</body>
+</html>

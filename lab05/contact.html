@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marrion - Lab 5: page4</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#nav_menu").slicknav({ prependTo: "#mobile_menu"});
+        });
+    </script>
+</head>
+<body>
+<header>
+    <img src="images/icon-suv.png" alt="suv_art">
+    <h1>Taylor's new car purchasing research</h1>
+    <h2>Let's scope out some new compact SUVs!</h2>
+</header>
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="top_picks.html">Top Picks</a></li>
+        <li><a href="details.html">Details</a></li>
+        <li><a href="contact.html" class="current lastitem">Contact</a></li>
+    </ul>
+</nav>
+<main>
+    <section>
+        <h1>Email Taylor</h1>
+        <form action="confirm.html" method="get" name="contact_form" id="contact_form">
+            <fieldset>
+                <legend>Please enter the following information:</legend>
+                <label for="first_name">First name:</label>
+                <input type="first_name" name="first_name" id="first_name" autofocus required><br>
+                <label for="last_name">Last name:</label>
+                <input type="last_name" name="last_name" id="last_name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required><br>
+                <label for="phone">Phone:</label>
+                <input type="phone" name="phone" id="phone" required pattern="\d{3[\-?]\d{3}[\-?]\d{4}" placeholder="Please include your 10 digit phone number" title="Must be a 10 digit phone number"><br>
+                <label>&nbsp;</label>
+                <input type="submit" id="submit" value="Submit">
+            </fieldset>
+        </form>
+    </section>
+    <aside>
+        <nav id="nav_list">
+            <ul class="none">
+                <li><a href="https://www.iihs.org/ratings/class-summary/small-suvs">IIHS Small SUVs Safety Ratings</a></li>
+                <li><a href="https://repairpal.com/reliability/compact-suv">Repair Pal Compact SUV Reliability Ratings</a></li>
+                <li><a href="https://www.jdpower.com/Cars/Ratings/dependability/2021/compact-suv">J.D. Power Dependability
+                Compact SUV awards</a></li>
+                <li><a href="https://www.motorbiscuit.com/the-most-reliable-2021-compact-suvs-according-to-consumer-reports/">Consumer Reports Most
+                Reliable 2021 Compact SUVs</a></li>
+            </ul>
+        </nav>
+    </aside>
+</main>
+<footer>
+    <p>&copy; 2021, Taylor Marrion</p>
+</footer>
+</body>
+</html>

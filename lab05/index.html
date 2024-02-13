@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marrion - Lab 5: Home</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#nav_menu").slicknav({ prependTo: "#mobile_menu"});
+        });
+    </script>
+</head>
+<body>
+<header>
+    <img src="images/icon-suv.png" alt="suv_art">
+    <h1>Taylor's new car purchasing research</h1>
+    <h2>Let's scope out some new compact SUVs!</h2>
+</header>
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="index.html" class="current">Home</a></li>
+        <li><a href="top_picks.html">Top Picks</a></li>
+        <li><a href="details.html">Details</a></li>
+        <li><a href="contact.html" class="lastitem">Contact</a></li>
+    </ul>
+</nav>
+<main>
+    <section>
+        <h2>Why are we buying a new car?</h2>
+            <p>My wife and I are expecting our first child at the end of this year! Being a one car family won't be feasible for
+            much longer, so we're looking to buy a compact SUV that will have enough space for a growing family.</p>
+        <h3>Disclaimer</h3>
+            <p>The contents of this page is solely my <strong>opinion</strong> and should not be taken as financial advice.</p>
+    </section>
+    <aside>
+        <nav id="nav_list">
+            <ul class="none">
+                <li><a href="https://www.iihs.org/ratings/class-summary/small-suvs">IIHS Small SUVs Safety Ratings</a></li>
+                <li><a href="https://repairpal.com/reliability/compact-suv">Repair Pal Compact SUV Reliability Ratings</a></li>
+                <li><a href="https://www.jdpower.com/Cars/Ratings/dependability/2021/compact-suv">J.D. Power Dependability
+                Compact SUV awards</a></li>
+                <li><a href="https://www.motorbiscuit.com/the-most-reliable-2021-compact-suvs-according-to-consumer-reports/">Consumer Reports Most
+                Reliable 2021 Compact SUVs</a></li>
+            </ul>
+        </nav>
+    </aside>
+</main>
+<footer>
+    <p>&copy; 2021, Taylor Marrion</p>
+</footer>
+</body>
+</html>

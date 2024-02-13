@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marrion - Lab 5: Details</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#nav_menu").slicknav({ prependTo: "#mobile_menu"});
+        });
+    </script>
+</head>
+<body>
+<header>
+    <img src="images/icon-suv.png" alt="suv_art">
+    <h1>Taylor's new car purchasing research</h1>
+    <h2>Let's scope out some new compact SUVs!</h2>
+</header>
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="top_picks.html">Top Picks</a></li>
+        <li><a href="details.html" class="current">Details</a></li>
+        <li><a href="contact.html" class="lastitem">Contact</a></li>
+    </ul>
+</nav>
+<main>
+    <section>
+        <figure>
+            <figcaption><h2>Car Details</h2></figcaption>
+            <table>
+                <thead>
+                <tr>
+                    <th scope="col">Make</th>
+                    <th scope="col">Model</th>
+                    <th scope="col">Storage (cu. ft.)</th>
+                    <th scope="col" id="price">Price</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Mazda</td>
+                    <td>CX-5</td>
+                    <td>103.6</td>
+                    <td>$33,530</td>
+                </tr>
+                <tr>
+                    <td>Suburu</td>
+                    <td>Forrester</td>
+                    <td>107.8</td>
+                    <td>$32,445</td>
+                </tr>
+                <tr>
+                    <td>Honda</td>
+                    <td>CR-V</td>
+                    <td>105.9</td>
+                    <td>$33,955</td>
+                </tr>
+                <tr>
+                    <td>Ford</td>
+                    <td>Escape</td>
+                    <td>104.0</td>
+                    <td>$33,300</td>
+                </tr>
+                <tr>
+                    <td>Nissan</td>
+                    <td>Rogue</td>
+                    <td>100.4</td>
+                    <td>$34,975</td>
+                </tr>
+                <tr>
+                    <td>Toyota</td>
+                    <td>RAV-4</td>
+                    <td>98.9</td>
+                    <td>$32,965</td>
+                </tr>
+                <tr>
+                    <td>Buick</td>
+                    <td>Envision</td>
+                    <td>100.4</td>
+                    <td>$34,795</td>
+                </tr>
+                <tr>
+                    <td>Volvo</td>
+                    <td>XC40</td>
+                    <td>98.0</td>
+                    <td>$36,795</td>
+                </tr>
+                </tbody>
+            </table>
+        </figure>
+    </section>
+    <aside>
+        <nav id="nav_list">
+            <ul class="none">
+                <li><a href="https://www.iihs.org/ratings/class-summary/small-suvs">IIHS Small SUVs Safety Ratings</a></li>
+                <li><a href="https://repairpal.com/reliability/compact-suv">Repair Pal Compact SUV Reliability Ratings</a></li>
+                <li><a href="https://www.jdpower.com/Cars/Ratings/dependability/2021/compact-suv">J.D. Power Dependability
+                Compact SUV awards</a></li>
+                <li><a href="https://www.motorbiscuit.com/the-most-reliable-2021-compact-suvs-according-to-consumer-reports/">Consumer Reports Most
+                Reliable 2021 Compact SUVs</a></li>
+            </ul>
+        </nav>
+    </aside>
+</main>
+<footer>
+    <p>&copy; 2021, Taylor Marrion</p>
+</footer>
+</body>
+</html>
